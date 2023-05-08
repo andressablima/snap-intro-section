@@ -39,4 +39,4 @@ I'm starting structuring the HTML file.
 ## Author
 
 - Frontend Mentor - [@andressablima](https://www.frontendmentor.io/profile/andressablima)
-- LinkedIn - [andressablima] (https://www.linkedin.com/in/andressablima/)
+- LinkedIn - [@andressablima] (https://www.linkedin.com/in/andressablima/)
