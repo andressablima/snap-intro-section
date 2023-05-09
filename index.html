@@ -2,27 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
 
-  Features
-  Company
-  Careers
-  About
+  <header>
+    <div class="navbar">
+      <img class="logo" src="./images/logo.svg">
+      <div class="main-nav">
+        <div class="dropdown">
+          <button class="dropbtn">Features <img src="./images/icon-arrow-down.svg"></button>
+          <div class="dropdown-content">
+            <a href="#"><img src="./images/icon-todo.svg"> Todo List</a>
+            <a href="#"><img src="./images/icon-calendar.svg"> Calendar</a>
+            <a href="#"><img src="./images/icon-reminders.svg"> Reminders</a>
+            <a href="#"><img src="./images/icon-planning.svg"> Planning</a></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Company <img src="./images/icon-arrow-down.svg"></button>
+          <div class="dropdown-content">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
 
-  Login
-  Register
+      </div>
+      <div class="right-nav">
+        <a href="#">Register</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </header>
+
 
   Make remote work
 
