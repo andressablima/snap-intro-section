@@ -5,11 +5,33 @@
     font-family: 'Epilogue';
     background-color: hsl(0, 0%, 98%);
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden ;
+    max-width: 1040px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(min-content, max-content);
+    grid-template-areas: 
+     "header header"
+     "main image"
+     "footer footer";
+    gap: 25px;
+}
 /* Header Section */
 header{
     width: 100%;
     height: 100%;
-    padding: 5px;
+    grid-area: header;
 }
 .navbar{
     overflow: hidden;
@@ -22,7 +44,6 @@ header{
 
 .main-nav{
     display: flex;
-    justify-content: left;
 }
 
 .navbar a{
@@ -99,15 +120,80 @@ header{
     align-items: center;
 }
 
-/* */
+/* Section - Main Content */
+
+.main-container{
+    grid-area: main;
+}
+picture img{
+    grid: image;
+    display: block;
+    width: 100%;
+    height: 80vh;
+}
+
+.img-mobile{
+    display: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    gap: 20px;
+}
+.main-title h1{
+    color:hsl(0, 0%, 8%);
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+.main-txt p{
+    color: hsl(0, 0%, 41%);
+    font-size: 22px;
+    line-height: 5vh;
+    padding-bottom: 15px;
+}
+
+button{
+    border: none;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    font-weight: 500;
+    font-size: 20px;
+    width: 15vw;
+    height: 8vh;
+    border-radius: 8px ;
+}
 
 
+.btn-main{
+    padding-top: 5px;
+    padding-bottom: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button:hover{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+
+}
 
 
-/* */
 
 
 /* Attribution section*/
+footer{
+    grid-area: footer;
+}
 .attribution {
     font-size: 11px; 
     text-align: center; 
