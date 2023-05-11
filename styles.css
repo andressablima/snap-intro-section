@@ -223,3 +223,41 @@ footer{
 .attribution a { 
     color: hsl(228, 45%, 44%);
 }
+
+@media(max-device-width: 769px) {
+    header{
+        width: 100%;
+    }
+    .dropdown .dropbtn{
+        font-size: 12px;
+    }
+    .dropdown-content a, .main-nav a{
+        font-size: 12px;
+    }
+    .main-nav{
+        
+        align-items: center;
+    }
+    .right-nav a{
+        font-size: 12px;
+    }
+    .logo{
+        width: 10%;
+    }
+    button{
+        font-size: 1rem;
+    }
+    .main-title h1{
+        font-size: 3rem ;
+    }
+    .main-txt p{
+        font-size: 1rem;
+    }
+    .clients-logo img{
+        width: 20%;
+    }
+}
+
+@media(max-device-width: 427px) {
+    
+}
