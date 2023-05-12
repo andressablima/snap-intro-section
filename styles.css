@@ -46,6 +46,7 @@ header{
 .main-nav{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;   
 }
 
 .navbar a{
@@ -134,7 +135,7 @@ header{
 }
 
 picture img{
-    grid: image;
+    grid-area: image;
     display: block;
     width: 100%;
     height: 100vh;
@@ -142,6 +143,7 @@ picture img{
 
 .img-mobile{
     display: none;
+    grid-area: image2;
 }
 
 section{
@@ -259,5 +261,48 @@ footer{
 }
 
 @media(max-device-width: 427px) {
-    
+    .container{
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+         "header"
+         "image2"
+         "main"
+         "main"
+         "footer";
+    }
+    .header{
+        height: fit-content;
+    }
+    .main-title h1{
+        font-size: 3rem;
+    }
+    .main-txt p{
+        font-size: 14px;
+        width: 100%;
+        padding: 0;
+    }
+    picture img{
+        display: none;
+    }
+    .img-mobile{
+        grid-area:image2;
+        display: grid;
+        width: 100%;
+        height: auto;
+
+
+    }
+    button{
+        width: 25vw;
+        font-size: 13px;
+    }
+    .clients-logo{
+        width: 100%;
+    }
+
+
 }
