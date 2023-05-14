@@ -128,6 +128,10 @@ header{
     align-items: center;
 }
 
+.menu-container{
+    display: none;
+}
+
 /* Section - Main Content */
 
 .main-container{
@@ -274,6 +278,65 @@ footer{
          "main"
          "footer";
     }
+    .navbar{
+        gap:4px;
+    }
+    .main-nav{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .menu-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        background-color: hsl(0, 0%, 98%);
+        height: 30vh;
+    }
+
+    #burguer{
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul{
+        list-style-type: none;
+    }
+
+    menu > ul > li {
+        padding-bottom: 5px;
+    }
+    menu > ul > li > a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .dropdown .dropbtn{
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    button .dropbtn{
+        padding: 0px;
+        padding: 2px;
+    }
     .header{
         height: fit-content;
     }
@@ -293,8 +356,6 @@ footer{
         display: grid;
         width: 100%;
         height: auto;
-
-
     }
     button{
         width: 25vw;
