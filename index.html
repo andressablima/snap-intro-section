@@ -46,16 +46,27 @@
         <div class="logo-mob">
           <img src="./images/logo.svg">
         </div>
-        <menu id="items">
-          <ul>
-            <li>Features <img src="./images/icon-arrow-down.svg"></li>
-            <li>Company <img src="./images/icon-arrow-down.svg"></li>
-            <li>Careers</li>
-            <li>About</li>
-          </ul>
-        </menu>
-        <div class="hamb-icons">
-          <img  id="burguer" onclick="clickMenu()" src="./images/icon-menu.svg">
+        <div class="items-container">
+          <div class="hamb-icons">
+            <img  id="burguer" onclick="clickMenu()" src="./images/icon-menu.svg">
+          </div>
+          <menu id="items">
+            <ul>
+              <ul class="dropitems">Features <img onclick="clickArrow()" src="./images/icon-arrow-down.svg">
+                <li><img src="./images/icon-todo.svg"> Todo List</li>
+                <li><img src="./images/icon-planning.svg"> Planning </li>
+                <li><img src="./images/icon-calendar.svg"> Calendar</li>
+                <li><img src="./images/icon-reminders.svg"> Reminders</li>
+              </ul>
+              <ul>Company <img src="./images/icon-arrow-down.svg">
+                <li>History</li>
+                <li>Our team</li>
+                <li>Blog</li>
+              </ul>
+              <li>Careers</li>
+              <li>About</li>
+            </ul>
+          </menu>
         </div>
       </nav>
     </header>

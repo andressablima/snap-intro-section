@@ -302,20 +302,39 @@ footer{
         justify-content: space-between;
         background-color: hsl(0, 0%, 98%);
         height: 30vh;
+        top: 0;
+        bottom: 0;
+        right: 0;
     }
 
+    .items-container{
+        width: 150px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        height: 10vh;
+        background-color: hsl(0, 0%, 98%);
+    }
     #burguer{
         display: block;
         padding: 10px;
         cursor: pointer;
+        float: right;
+        padding-top: 12vh;
     }
 
     menu{
         display: block;
+        padding-top: 20vh;
+        margin-left: 10px;
+        padding-left: 10px;
     }
 
     menu > ul{
         list-style-type: none;
+        font-size: 14px;
+        padding-bottom: 5px;
     }
 
     menu > ul > li {
@@ -327,7 +346,22 @@ footer{
         text-decoration: none;
         text-align: center;
     }
+    ul{
+        padding-bottom: 5px;
+    }
 
+    li{
+        list-style-type: none;
+        padding-bottom: 5px;
+    }
+    menu > ul > ul > li{
+        padding-bottom: 3px;
+        padding-left: 6px;
+    }
+    menu img{
+        width: 10%;
+    }
+  
     .dropdown .dropbtn{
         padding: 0px;
         font-size: 12px;
