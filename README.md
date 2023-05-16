@@ -1,7 +1,5 @@
 # Frontend Mentor - Intro section with dropdown navigation solution
 
-Projecting in development :)
-
 This is my project to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). 
 
 ## Table of contents
@@ -14,7 +12,7 @@ This is my project to the [Intro section with dropdown navigation challenge on F
 
 ## Overview
 
-Project of section using drop drown menu and mobile menu with JavaScript. Projecting in development :)
+Project of section using drop drown menu and mobile menu with JavaScript
 
 ### The challenge
 
@@ -26,7 +24,7 @@ Users should be able to:
 
 ## My process
 
-I'm starting structuring the HTML file.
+I started structuring HTML and then I started the CSS file, putting everything in place using grid and flebox, also putting the responsive part to different screen sizes. I used JavaScript for the hamburguer menu, so user can click on and open the show the items.
 
 ### Built with
 
@@ -34,7 +32,6 @@ I'm starting structuring the HTML file.
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
 ## Author
 
